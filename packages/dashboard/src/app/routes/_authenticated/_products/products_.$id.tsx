@@ -73,7 +73,7 @@ function ProductDetailPage() {
                 translations: entity.translations.map(translation => ({
                     id: translation.id,
                     languageCode: translation.languageCode,
-                    name: translation.name,
+                    name: translation.name.slice(0, 3),
                     slug: translation.slug,
                     description: translation.description,
                     customFields: (translation as any).customFields,
